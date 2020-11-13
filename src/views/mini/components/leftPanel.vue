@@ -5,7 +5,7 @@
       <div v-for="(item, index) in list" :key="index" class="item">
         <h4>{{ item.title }}</h4>
         <ul>
-          <li v-for="(component, idx) in item.list" :key="idx" @click="$emit('addComponent', component)">
+          <li v-for="(component, idx) in item.list" :key="idx" @click="$emit('add-component', component)">
             <span :class="['iconfont', `icon-${component.icon}`]" />
             <span>{{ component.name }}</span>
           </li>

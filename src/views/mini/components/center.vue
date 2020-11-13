@@ -154,11 +154,6 @@ export default {
           display: block
         }
       }
-      &>.selected {
-        &+.del {
-          display: block
-        }
-      }
       &:hover>.box:not(.selected), &>.selected{
         &::after{
           content: '';

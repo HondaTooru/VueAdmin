@@ -1,6 +1,6 @@
 <template>
   <div class="padding-sm flex justify-between align-start">
-    <LeftPanel :list="allComponent" :save-data="list" @addComponent="addComponent" />
+    <LeftPanel :list="allComponent" :save-data="list" @add-component="addComponent" />
     <CenterPanel :list="list" @onDel="delComponent" />
     <RightPanel :list="list" @on-del-list="delListItem" @on-add-list="addListItem" />
   </div>
@@ -31,7 +31,7 @@ const listComponent = [ // 左边组件库
     { name: '轮播图', componentName: 'Cswiper', icon: 'tupianlunbo', data: { duration: 5000, list: [{ link: '', image: '' }, { link: '', image: '' }] }},
     { name: '单图组', componentName: 'PicGroup', icon: 'tupian', data: { list: [{ link: '', image: '' }], padtb: 0, padlf: 0, backgroundColor: '#fff' }},
     { name: '图片橱窗', componentName: 'ShowCase', icon: 'newbilayout', data: { list: [{ link: '', image: '' }, { link: '', image: '' }, { link: '', image: '' }, { link: '', image: '' }], padtb: 0, padlf: 0, backgroundColor: '#fff', layout: { type: 1, name: '布局方式', list: [{ name: '两列', value: 1 }, { name: '三列', value: 2 }, { name: '四列', value: 3 }, { name: '橱窗', value: 4 }] }}},
-    { name: '视频', componentName: 'ShowVideo', icon: 'shipin', data: { padtb: 0, padlf: 0, type: 1, video: { cover: '', src: '', auto: false }}},
+    { name: '视频', componentName: 'ShowVideo', icon: 'shipin', data: { padtb: 0, padlf: 0, type: 1, video: { cover: '', src: '', auto: true, loop: true }}},
     { name: '文章组', componentName: 'AirtcleList', icon: 'zixun', data: { padtb: 0, padlf: 0, backgroundColor: '#fff' }},
     { name: '头条快报', componentName: 'TouTiao', icon: 'toutiao', data: { padtb: 0, padlf: 0, backgroundColor: '#fff' }}
   ] },

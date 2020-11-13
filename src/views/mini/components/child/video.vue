@@ -1,6 +1,6 @@
 <template>
   <div class="video" :style="{padding: `${option.padtb}px ${option.padlf}px`}">
-    <video :src="require('@/assets/mov_bbb.mp4')" :autoplay="false" controls :loop="false" />
+    <video :src="require('@/assets/mov_bbb.mp4')" :autoplay="option.video.auto" controls :loop="option.video.loop" />
   </div>
 </template>
 
