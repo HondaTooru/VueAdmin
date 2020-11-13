@@ -14,7 +14,7 @@
     >
       <div v-for="(element, index) in list.component" :key="index" class="item">
         <div :class="['box',{ selected: element.selected }]"><component :is="element.componentName" :option="element.data" /></div>
-        <div class="del"><el-button type="info" icon="el-icon-delete" size="mini" @click="delItem(index)">删除</el-button></div>
+        <div class="del"><el-button type="danger" icon="el-icon-delete" size="mini" @click="delItem(index)">删除</el-button></div>
       </div>
     </draggable>
   </div>
